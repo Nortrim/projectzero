@@ -1,0 +1,8 @@
+mixin boxHeader(header-logo, header-name)
+  div.box-header
+    div.header-logo
+      div(class = 'circle')= header-logo
+    div.header-text 
+      b= header-name
+    svg.header-line
+      line(x1="5%" y1="50%" x2="100%" y2="50%" stroke-width="4px" stroke="#3d6cb0")

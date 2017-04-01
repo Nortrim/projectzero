@@ -1,0 +1,30 @@
+//soft.styl
+
+.software-container
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  height: 300px
+  text-align: left
+  margin: 15px
+
+.software-container > div
+  height: 80px
+
+.software-line
+  height: 30px
+  background: #e6e6e6
+  margin: 10px 10px 10px 0
+
+
+.software-line::before
+  content: ''
+  display: block
+  height: 30px
+  width: 33%
+  background: $font-color
+
+.point
+  border-radius: 50%
+  width: 20px
+  height: 20px
