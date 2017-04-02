@@ -33,5 +33,13 @@
     "stylus-loader": "^1.6.1",
     "webpack": "^1.14.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nortrim/projectzero.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nortrim/projectzero/issues"
+  },
+  "homepage": "https://github.com/Nortrim/projectzero#readme",
   "description": ""
 }

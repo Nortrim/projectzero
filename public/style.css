@@ -133,19 +133,38 @@ li::before {
 h2 {
   font-weight: lighter;
 }
+.skill-box {
+  text-align: center;
+  height: 50px;
+  width: 230px;
+  margin: auto;
+}
+.skill,
+.skill-checked {
+  float: left;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  border: 1px solid;
+  margin-left: 5px;
+}
+.skill-checked {
+  background-color: #3d6cb0;
+}
 .software-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 300px;
   text-align: left;
-  margin: 15px;
+  margin: 10px 5%;
 }
 .software-container > div {
   height: 80px;
 }
 .software-line {
   height: 30px;
+  width: 40%;
   background: #e6e6e6;
   margin: 10px 10px 10px 0;
 }
@@ -155,11 +174,6 @@ h2 {
   height: 30px;
   width: 33%;
   background: #3d6cb0;
-}
-.point {
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
 }
 .content {
   text-align: center;

@@ -5,9 +5,13 @@ html
     link(href='style.css' rel='stylesheet')
 
   body
-    include blocks/title/title.pug
-    include blocks/profile/profile.pug
-    include blocks/contact/contact.pug
-    include blocks/skills/skills.pug
-    include blocks/education/education.pug
-    include blocks/experience/exp.pug
+    .container
+      .left
+        include blocks/title/title.pug
+        include blocks/profile/profile.pug
+        include blocks/contact/contact.pug
+        include blocks/skills/skills.pug
+      .right
+        include blocks/education/education.pug
+        include blocks/experience/exp.pug
+        include blocks/software/soft.pug 
