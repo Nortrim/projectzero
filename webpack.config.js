@@ -30,15 +30,11 @@ module.exports = {
       loader: "pug-loader"
     }, {
       test:   /\.styl$/,
-      loader: ExtractTextPlugin.extract('css!stylus-loader?resolve url')
+      loader: ExtractTextPlugin.extract('css!stylus-loader?url-loader')
     }, {
-      test:   /\.(png|jpg)$/,
-      loader: 'file?name=[path][name].[ext]'
-    }, {
-      test: /\.(eot|svg|ttf|woff|woff2)$/,
-      loader: 'file?name=fonts/[name].[ext]'
+      test: /\.(png|jpg|eot|svg|ttf|woff|woff2)$/,
+      loader: 'file?name=fonts/[name]/[name].[ext]'
     }]
-
   },
 
   plugins: [
@@ -46,6 +42,6 @@ module.exports = {
       hash: true,
       template: './index.pug'
     }),
-    new ExtractTextPlugin('[name].css', {allChunks: true, pretty: true})
+    new ExtractTextPlugin('[name].css', {allChunks: true})
   ]
 };

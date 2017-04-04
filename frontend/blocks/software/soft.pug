@@ -1,10 +1,14 @@
 include ../box-header/box-header.pug
+include soft-mixin.pug
 
 div(class="content box7")
   +boxHeader('F','SOFTWARE')
   .software-container
-    div
-      PHOTOSHOP
-      .software-line
+    +soft-mix('PHOTOSHOP',30)
+    +soft-mix('ILLUSTRATOR',70)
+    +soft-mix('INDESIGN',100)
+    +soft-mix('DREAMWEAVER',43)
+    +soft-mix('AFTER EFFECTS',77)
+    +soft-mix('HTML&CSS',20)
 
     
