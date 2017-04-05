@@ -1,54 +1,48 @@
 @font-face {
   font-family: "MyriadProRegular";
-  src: url(/fonts/MyriadProRegular/MyriadProRegular.eot);
-  src: url(/fonts/MyriadProRegular/MyriadProRegular.eot?#iefix) format("embedded-opentype"), url(/fonts/MyriadProRegular/MyriadProRegular.woff) format("woff"), url(/fonts/MyriadProRegular/MyriadProRegular.ttf) format("truetype");
+  src: url(./fonts/MyriadProRegular/MyriadProRegular.eot);
+  src: url(./fonts/MyriadProRegular/MyriadProRegular.eot?#iefix) format("embedded-opentype"), url(./fonts/MyriadProRegular/MyriadProRegular.woff) format("woff"), url(./fonts/MyriadProRegular/MyriadProRegular.ttf) format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "MyriadProBold";
-  src: url(/fonts/MyriadProBold/MyriadProBold.eot);
-  src: url(/fonts/MyriadProBold/MyriadProBold.eot?#iefix) format("embedded-opentype"), url(/fonts/MyriadProBold/MyriadProBold.woff) format("woff"), url(/fonts/MyriadProBold/MyriadProBold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "MyriadProItalic";
-  src: url(/fonts/MyriadProItalic/MyriadProItalic.eot);
-  src: url(/fonts/MyriadProItalic/MyriadProItalic.eot?#iefix) format("embedded-opentype"), url(/fonts/MyriadProItalic/MyriadProItalic.woff) format("woff"), url(/fonts/MyriadProItalic/MyriadProItalic.ttf) format("truetype");
+  src: url(./fonts/MyriadProBold/MyriadProBold.eot);
+  src: url(./fonts/MyriadProBold/MyriadProBold.eot?#iefix) format("embedded-opentype"), url(./fonts/MyriadProBold/MyriadProBold.woff) format("woff"), url(./fonts/MyriadProBold/MyriadProBold.ttf) format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "MyriadProSemiBold";
-  src: url(/fonts/MyriadProSemiBold/MyriadProSemiBold.eot);
-  src: url(/fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix) format("embedded-opentype"), url(/fonts/MyriadProSemiBold/MyriadProSemiBold.woff) format("woff"), url(/fonts/MyriadProSemiBold/MyriadProSemiBold.ttf) format("truetype");
+  src: url(./fonts/MyriadProSemiBold/MyriadProSemiBold.eot);
+  src: url(./fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix) format("embedded-opentype"), url(./fonts/MyriadProSemiBold/MyriadProSemiBold.woff) format("woff"), url(./fonts/MyriadProSemiBold/MyriadProSemiBold.ttf) format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: 'Glyphter';
-  src: url(/fonts/Glyphter/Glyphter.eot);
-  src: url(/fonts/Glyphter/Glyphter.eot?#iefix) format("embedded-opentype"), url(/fonts/Glyphter/Glyphter.woff) format("woff"), url(/fonts/Glyphter/Glyphter.ttf) format("truetype"), url(/fonts/Glyphter/Glyphter.svg#Glyphter) format("svg");
+  src: url(./fonts/Glyphter/Glyphter.eot);
+  src: url(./fonts/Glyphter/Glyphter.eot?#iefix) format("embedded-opentype"), url(./fonts/Glyphter/Glyphter.woff) format("woff"), url(./fonts/Glyphter/Glyphter.ttf) format("truetype"), url(./fonts/Glyphter/Glyphter.svg#Glyphter) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 body {
-  font: 16px 'MyriadProRegular', serif;
+  font: 15px 'MyriadProRegular', serif;
 }
 .left {
   display: flex;
   flex-direction: column;
   flex-basis: 400px;
-  height: 100%;
   flex-grow: 1;
+  padding: 80px 0 0 5px;
 }
 .right {
   flex-direction: column;
   display: flex;
-  flex-basis: 500px;
-  height: 100%;
+  flex-basis: 400px;
   flex-grow: 5;
+  padding-top: 68px;
+  padding-left: 36px;
 }
 .circle {
   margin: 0 auto;
@@ -61,11 +55,10 @@ body {
 }
 .container {
   margin: auto;
-  margin-top: 87px;
   display: flex;
   flex-wrap: wrap;
   min-width: 400px;
-  width: 85%;
+  width: 94.5%;
   height: 1200px;
 }
 .content {
@@ -81,44 +74,51 @@ p {
 .bolder {
   font-weight: 900;
 }
-.content {
-  text-align: center;
-  padding: 0 10px;
-  min-width: 300px;
-  flex-grow: 1;
-}
 .box1 {
   font-size: 25px;
   line-height: 5px;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 90px;
+  padding-bottom: 93px;
 }
 .box1 h1 {
   font-size: 55px;
   font-weight: lighter;
-  line-height: 50px;
-  margin-bottom: 20px;
+  line-height: 45px;
+  margin-bottom: 23px;
 }
-.box1 .bolder {
-  font-size: 65px;
+.bolder {
+  font-size: 60px;
+  line-height: 50px;
+  letter-spacing: 4px;
   font-weight: 900;
+}
+.box2 {
+  padding-bottom: 37px;
+}
+.profile-p {
+  width: 91%;
+  font-size: 15px;
+  margin: 10px 2px;
+  line-height: 18px;
+}
+.box2 b {
+  line-height: 19px;
 }
 .box-header {
   display: inline-table;
   width: 100%;
   color: #3d6cb0;
-  font-size: 40px;
-  align-items: center;
+  font-size: 39px;
   border-collapse: collapse;
-  padding: 0;
+  text-transform: upper-case;
 }
 .box-header .circle {
-  width: 70px;
-  height: 60px;
-  box-shadow: inset 0 0 0 2px #fff;
-  margin: 0 10px 0 0;
-  padding-top: 10px;
+  width: 72px;
+  height: 57px;
+  box-shadow: inset 0 0 0 3px #fff;
+  margin: 0 10px 0 1px;
+  padding-top: 13px;
   font-family: 'Glyphter';
   color: #fff;
   vertical-align: middle;
@@ -132,100 +132,173 @@ p {
   display: table-cell;
   width: 50px;
   vertical-align: middle;
-  text-align: left;
+  font-weight: 900;
+  letter-spacing: 3px;
 }
 .header-line {
   display: table-cell;
-  width: 100%;
+  width: 90%;
   margin: 0;
   height: 70px;
 }
-table {
-  text-align: left;
-  border-spacing: 15px;
+.contact-box {
   margin: auto;
 }
-table tr td:first-of-type,
-.li-h2 {
+.box3 {
+  padding-bottom: 19px;
+}
+table {
+  height: 235px;
+  text-align: left;
+  border-spacing: 15px;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: -12px;
+  letter-spacing: 1px;
+}
+table tr td:first-of-type {
   color: #3d6cb0;
   font-weight: 900;
+  width: 110px;
 }
-ul {
+.box5 {
+  font-size: 14px;
+}
+.ul-edu {
   list-style: none;
-  width: 100%;
-  height: 100%;
   text-align: left;
+  margin: 22px 0 0 16px;
+  padding-bottom: 60px;
 }
-li::before {
+.ul-edu li::before {
   position: absolute;
   content: '';
   border-radius: 50%;
   height: 20px;
   width: 20px;
   background: #000;
-  transform: translate(-40px, 10px);
+  transform: translate(-42px, 8px);
 }
-h2 {
+.ul-edu li {
+  margin-bottom: -10px;
+}
+.ul-edu h2 {
   font-weight: lighter;
+  letter-spacing: 1px;
+  line-height: 33px;
+  margin-bottom: 7px;
+  font-size: 24px;
+}
+.li-h2 {
+  color: #3d6cb0;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.ul-edu p {
+  margin: 0;
+  line-height: 18px;
+}
+.box6 {
+  font-size: 14px;
+  margin-left: -9px;
+}
+.ul-exp {
+  list-style: none;
+  text-align: left;
+  margin: 39px 0 0 16px;
+  padding-bottom: 60px;
+}
+.ul-exp li::before {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background: #000;
+  transform: translate(-42px, 8px);
+}
+.ul-exp li {
+  margin-bottom: -10px;
+}
+.ul-exp h2 {
+  font-weight: lighter;
+  letter-spacing: 1px;
+  line-height: 33px;
+  margin-bottom: 7px;
+  font-size: 24px;
+}
+.li-exp-h2 {
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.ul-exp p {
+  margin: 0;
+  line-height: 18px;
+}
+.skills {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 26px;
+  width: 400px;
 }
 .skill-box {
-  text-align: center;
-  height: 50px;
-  width: 230px;
-  margin: auto;
+  margin: 7px auto 18px 20px;
+  height: 18px;
+  width: 340px;
 }
 .skill,
 .skill-checked {
   float: left;
   border-radius: 50%;
-  height: 15px;
-  width: 15px;
-  margin-left: 5px;
+  height: 18px;
+  width: 18px;
+  margin-left: 9px;
   background-color: #e6e6e6;
 }
 .skill-checked {
   background-color: #3d6cb0;
 }
+.box7 {
+  margin-left: -10px;
+  font-size: 25px;
+}
 .software-container {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  height: 300px;
   text-align: left;
-  margin: 10px 5%;
+  margin: 22px 9px;
 }
 .soft-box {
-  height: 80px;
+  height: 88px;
+  margin: 0 auto;
+  width: 346px;
 }
 .software-line {
-  height: 30px;
+  height: 23px;
   background: #e6e6e6;
-  margin: 10px 10px 10px 0;
+  margin: 13px 10px 0 0;
+  width: 277px;
 }
 .software-line-check {
-  height: 30px;
+  height: 23px;
   background: #3d6cb0;
-}
-.content {
-  text-align: center;
-  padding: 0 10px;
-  min-width: 300px;
-  flex-grow: 1;
 }
 .box1 {
   font-size: 25px;
   line-height: 5px;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 90px;
+  padding-bottom: 93px;
 }
 .box1 h1 {
   font-size: 55px;
   font-weight: lighter;
-  line-height: 50px;
-  margin-bottom: 20px;
+  line-height: 45px;
+  margin-bottom: 23px;
 }
-.box1 .bolder {
-  font-size: 65px;
+.bolder {
+  font-size: 60px;
+  line-height: 50px;
+  letter-spacing: 4px;
   font-weight: 900;
 }

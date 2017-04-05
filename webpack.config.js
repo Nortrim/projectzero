@@ -12,7 +12,7 @@ module.exports = {
   },
   output:  {
     path:     __dirname + '/public',
-    publicPath: '/',
+    publicPath: './',
     filename: '[name].js'
   },
   watch: true,
@@ -43,5 +43,11 @@ module.exports = {
       template: './index.pug'
     }),
     new ExtractTextPlugin('[name].css', {allChunks: true})
-  ]
+  ],
+
+  devServer: {
+    contentBase: __dirname + '/frontend',
+    hot: true
+  }
+
 };
