@@ -58,7 +58,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   min-width: 400px;
-  width: 94.5%;
+  max-width: 1150px;
   height: 1200px;
 }
 .content {
@@ -266,12 +266,12 @@ table tr td:first-of-type {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  margin: 22px 9px;
+  margin: 22px 9px 0 -10px;
 }
 .soft-box {
   height: 88px;
   margin: 0 auto;
-  width: 346px;
+  width: 277px;
 }
 .software-line {
   height: 23px;
