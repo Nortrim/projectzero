@@ -34,15 +34,14 @@ body {
   flex-direction: column;
   flex-basis: 400px;
   flex-grow: 1;
-  padding: 80px 0 0 5px;
+  padding: 80px 69px 0 5px;
 }
 .right {
   flex-direction: column;
   display: flex;
-  flex-basis: 400px;
-  flex-grow: 5;
-  padding-top: 68px;
-  padding-left: 36px;
+  flex-basis: 650px;
+  flex-grow: 2;
+  margin-top: 68px;
 }
 .circle {
   margin: 0 auto;
@@ -79,13 +78,14 @@ p {
   line-height: 5px;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 93px;
+  padding-left: 45px;
+  padding-bottom: 89px;
 }
 .box1 h1 {
   font-size: 55px;
   font-weight: lighter;
   line-height: 45px;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
 }
 .bolder {
   font-size: 60px;
@@ -97,7 +97,6 @@ p {
   padding-bottom: 37px;
 }
 .profile-p {
-  width: 91%;
   font-size: 15px;
   margin: 10px 2px;
   line-height: 18px;
@@ -130,29 +129,32 @@ p {
 }
 .header-text {
   display: table-cell;
-  width: 50px;
   vertical-align: middle;
   font-weight: 900;
   letter-spacing: 3px;
 }
+.right .header-text {
+  padding-left: 1.5%;
+}
 .header-line {
   display: table-cell;
-  width: 90%;
+  width: 100%;
   margin: 0;
   height: 70px;
 }
 .contact-box {
   margin: auto;
+  width: 400px;
 }
 .box3 {
-  padding-bottom: 19px;
+  padding-bottom: 22px;
 }
 table {
   height: 235px;
   text-align: left;
-  border-spacing: 15px;
+  border-spacing: 13px;
   font-size: 20px;
-  margin-top: 5px;
+  margin-top: 7px;
   margin-left: -12px;
   letter-spacing: 1px;
 }
@@ -241,8 +243,11 @@ table tr td:first-of-type {
   font-size: 26px;
   width: 400px;
 }
+.skill-wrapper {
+  margin-left: 20px;
+}
 .skill-box {
-  margin: 7px auto 18px 20px;
+  margin: 7px auto 19px 17px;
   height: 18px;
   width: 340px;
 }
@@ -266,11 +271,11 @@ table tr td:first-of-type {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  margin: 22px 9px 0 -10px;
+  margin: 22px -100px 0 8px;
 }
 .soft-box {
   height: 88px;
-  margin: 0 auto;
+  margin-right: 70px;
   width: 277px;
 }
 .software-line {
@@ -288,13 +293,14 @@ table tr td:first-of-type {
   line-height: 5px;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 93px;
+  padding-left: 45px;
+  padding-bottom: 89px;
 }
 .box1 h1 {
   font-size: 55px;
   font-weight: lighter;
   line-height: 45px;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
 }
 .bolder {
   font-size: 60px;

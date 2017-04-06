@@ -1,12 +1,13 @@
 mixin skills-mixin(name, checked)
-    span.skill-name= name
-    br
-    .skill-box
-      - var i = 0
-      while i < 12
-        if (i < checked)
-          .skill-checked
-          - i++
-        else
-          .skill
-          - i++
+    .skill-wrapper
+      span.skill-name= name
+      br
+      .skill-box
+        - var i = 0
+        while i < 12
+          if (i < checked)
+            .skill-checked
+            - i++
+          else
+            .skill
+            - i++
