@@ -1,17 +1,18 @@
 include ../box-header/box-header.pug
-div(class="content-block content-block__contact")
-  +box-header('C','CONTACT')
-  .contact__content-box
-    table.contact__table
-      tr
-        td.table__color_blue ADDRESS
-        td Main Street, City
-      tr
-        td.table__color_blue E-MAIL
-        td contact@domain.com
-      tr
-        td.table__color_blue PHONE
-        td 555-555-555
-      tr
-        td.table__color_blue WEBSITE
-        td www.yourweb.com
+mixin contact-block()
+  div(class="content-block content-block__contact")
+    +box-header('C','CONTACT')
+    .contact__content-box
+      table.contact__table
+        tr
+          td.table__color_blue ADDRESS
+          td Main Street, City
+        tr
+          td.table__color_blue E-MAIL
+          td contact@domain.com
+        tr
+          td.table__color_blue PHONE
+          td 555-555-555
+        tr
+          td.table__color_blue WEBSITE
+          td www.yourweb.com
