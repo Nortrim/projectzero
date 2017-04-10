@@ -26,24 +26,36 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
+.container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 400px;
+  max-width: 1150px;
+  height: 1200px;
   font: 15px 'MyriadProRegular', serif;
 }
-.left {
+.container__left-content {
   display: flex;
   flex-direction: column;
   flex-basis: 400px;
   flex-grow: 1;
   padding: 80px 69px 0 5px;
 }
-.right {
+.container__right-content {
   flex-direction: column;
   display: flex;
   flex-basis: 650px;
   flex-grow: 2;
   margin-top: 68px;
 }
-.circle {
+.content-block {
+  text-align: center;
+  padding: 0 10px;
+  min-width: 300px;
+  flex-grow: 1;
+}
+.title__circle {
   margin: 0 auto;
   height: 230px;
   width: 230px;
@@ -52,28 +64,7 @@ body {
   border: 1px solid #3d6cb0;
   box-shadow: inset 0 0 0 14px #fff;
 }
-.container {
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 400px;
-  max-width: 1150px;
-  height: 1200px;
-}
-.content {
-  text-align: center;
-  padding: 0 10px;
-  min-width: 300px;
-  flex-grow: 1;
-}
-p {
-  word-wrap: break-word;
-  text-align: left;
-}
-.bolder {
-  font-weight: 900;
-}
-.box1 {
+.content-block__title {
   font-size: 25px;
   line-height: 5px;
   text-align: center;
@@ -81,27 +72,29 @@ p {
   padding-left: 45px;
   padding-bottom: 89px;
 }
-.box1 h1 {
+.title__h1 {
   font-size: 55px;
   font-weight: lighter;
   line-height: 45px;
   margin-bottom: 26px;
 }
-.bolder {
+.title__bold-name {
   font-size: 60px;
   line-height: 50px;
   letter-spacing: 4px;
   font-weight: 900;
 }
-.box2 {
+.content-block__profile {
   padding-bottom: 37px;
 }
-.profile-p {
+.content-block__paragraph {
+  text-align: left;
   font-size: 15px;
   margin: 10px 2px;
   line-height: 18px;
 }
-.box2 b {
+.content-block__bold {
+  font-weight: bold;
   line-height: 19px;
 }
 .box-header {
@@ -112,7 +105,10 @@ p {
   border-collapse: collapse;
   text-transform: upper-case;
 }
-.box-header .circle {
+.box-header__circle {
+  border-radius: 50%;
+  background-color: #3d6cb0;
+  border: 1px solid #3d6cb0;
   width: 72px;
   height: 57px;
   box-shadow: inset 0 0 0 3px #fff;
@@ -122,34 +118,34 @@ p {
   color: #fff;
   vertical-align: middle;
 }
-.header-logo {
+.box-header__logo {
   display: table-cell;
   vertical-align: middle;
   width: 62px;
 }
-.header-text {
+.box-header__text {
   display: table-cell;
   vertical-align: middle;
   font-weight: 900;
   letter-spacing: 3px;
 }
-.right .header-text {
+.right .box-header__text {
   padding-left: 1.5%;
 }
-.header-line {
+.box-header__line {
   display: table-cell;
   width: 100%;
   margin: 0;
   height: 70px;
 }
-.contact-box {
+.contact__content-box {
   margin: auto;
   width: 400px;
 }
-.box3 {
+.content-block__contact {
   padding-bottom: 22px;
 }
-table {
+.contact__table {
   height: 235px;
   text-align: left;
   border-spacing: 13px;
@@ -158,21 +154,21 @@ table {
   margin-left: -12px;
   letter-spacing: 1px;
 }
-table tr td:first-of-type {
+.table__color_blue {
   color: #3d6cb0;
   font-weight: 900;
   width: 110px;
 }
-.box5 {
+.list {
   font-size: 14px;
-}
-.ul-edu {
   list-style: none;
   text-align: left;
+}
+.list_education {
   margin: 22px 0 0 16px;
   padding-bottom: 60px;
 }
-.ul-edu li::before {
+.list__point::before {
   position: absolute;
   content: '';
   border-radius: 50%;
@@ -181,36 +177,40 @@ table tr td:first-of-type {
   background: #000;
   transform: translate(-42px, 8px);
 }
-.ul-edu li {
+.list__point {
   margin-bottom: -10px;
 }
-.ul-edu h2 {
+.list__header {
   font-weight: lighter;
   letter-spacing: 1px;
   line-height: 33px;
   margin-bottom: 7px;
   font-size: 24px;
 }
-.li-h2 {
+.list__title_color_blue {
   color: #3d6cb0;
+}
+.list__title_weight_bold {
   font-weight: 900;
   letter-spacing: 1px;
 }
-.ul-edu p {
+.list__paragraph {
   margin: 0;
   line-height: 18px;
 }
-.box6 {
-  font-size: 14px;
+.content-block__experience {
   margin-left: -9px;
 }
-.ul-exp {
+.list {
+  font-size: 14px;
   list-style: none;
   text-align: left;
+}
+.list_experience {
   margin: 39px 0 0 16px;
   padding-bottom: 60px;
 }
-.ul-exp li::before {
+.list__point::before {
   position: absolute;
   content: '';
   border-radius: 50%;
@@ -219,25 +219,25 @@ table tr td:first-of-type {
   background: #000;
   transform: translate(-42px, 8px);
 }
-.ul-exp li {
+.list__point {
   margin-bottom: -10px;
 }
-.ul-exp h2 {
+.list__header {
   font-weight: lighter;
   letter-spacing: 1px;
   line-height: 33px;
   margin-bottom: 7px;
   font-size: 24px;
 }
-.li-exp-h2 {
+.list__title_weight_bold {
   font-weight: 900;
   letter-spacing: 2px;
 }
-.ul-exp p {
+.list__paragraph {
   margin: 0;
   line-height: 18px;
 }
-.skills {
+.skill__content {
   text-align: center;
   margin: 20px auto;
   font-size: 26px;
@@ -246,13 +246,12 @@ table tr td:first-of-type {
 .skill-wrapper {
   margin-left: 20px;
 }
-.skill-box {
+.skill__skill-box {
   margin: 7px auto 19px 17px;
   height: 18px;
   width: 340px;
 }
-.skill,
-.skill-checked {
+.skill-circle {
   float: left;
   border-radius: 50%;
   height: 18px;
@@ -260,35 +259,44 @@ table tr td:first-of-type {
   margin-left: 9px;
   background-color: #e6e6e6;
 }
-.skill-checked {
+.skill__condition_checked {
   background-color: #3d6cb0;
 }
-.box7 {
+.content-block__software {
   margin-left: -10px;
   font-size: 25px;
 }
-.software-container {
+.software__software-container {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
   margin: 22px -100px 0 8px;
 }
-.soft-box {
+.software-mixin__box {
   height: 88px;
   margin-right: 70px;
   width: 277px;
 }
-.software-line {
+.software-mixin__line {
   height: 23px;
   background: #e6e6e6;
   margin: 13px 10px 0 0;
   width: 277px;
 }
-.software-line-check {
+.software-mixin__line_condition_checked {
   height: 23px;
   background: #3d6cb0;
 }
-.box1 {
+.title__circle {
+  margin: 0 auto;
+  height: 230px;
+  width: 230px;
+  border-radius: 50%;
+  background-color: #3d6cb0;
+  border: 1px solid #3d6cb0;
+  box-shadow: inset 0 0 0 14px #fff;
+}
+.content-block__title {
   font-size: 25px;
   line-height: 5px;
   text-align: center;
@@ -296,13 +304,13 @@ table tr td:first-of-type {
   padding-left: 45px;
   padding-bottom: 89px;
 }
-.box1 h1 {
+.title__h1 {
   font-size: 55px;
   font-weight: lighter;
   line-height: 45px;
   margin-bottom: 26px;
 }
-.bolder {
+.title__bold-name {
   font-size: 60px;
   line-height: 50px;
   letter-spacing: 4px;

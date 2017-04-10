@@ -6,7 +6,10 @@
   border-collapse: collapse
   text-transform upper-case
 
-.box-header .circle
+.box-header__circle
+    border-radius: 50%
+    background-color: $font-color
+    border: 1px solid $font-color
     width: 72px
     height: 57px
     box-shadow: inset 0 0 0 3px white
@@ -16,22 +19,22 @@
     color: white
     vertical-align: middle
 
-.header-logo
+.box-header__logo
   display: table-cell
   vertical-align: middle
   width: 62px
 
 
-.header-text
+.box-header__text
   display: table-cell
   vertical-align: middle
   font-weight: 900
   letter-spacing: 3px
 
-.right .header-text
+.right .box-header__text
   padding-left 1.5%
 
-.header-line
+.box-header__line
   display: table-cell
   width: 100%
   margin: 0

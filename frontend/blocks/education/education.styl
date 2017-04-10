@@ -1,14 +1,14 @@
 //education.styl
-.box5
+.list
   font-size 14px
-
-.ul-edu
   list-style: none
   text-align: left
+
+.list_education
   margin 22px 0 0 16px
   padding-bottom 60px
 
-.ul-edu li::before
+.list__point::before
   position: absolute
   content: ''
   border-radius: 50%
@@ -17,21 +17,23 @@
   background: black
   transform: translate(-42px, 8px)
 
-.ul-edu li
+.list__point
   margin-bottom -10px
 
-.ul-edu h2
+.list__header
   font-weight: lighter
   letter-spacing 1px
   line-height 33px
   margin-bottom 7px
   font-size 24px
 
-.li-h2
+.list__title_color_blue
   color: $font-color
+
+.list__title_weight_bold
   font-weight: 900
   letter-spacing 1px
 
-.ul-edu p
+.list__paragraph
   margin 0
   line-height 18px

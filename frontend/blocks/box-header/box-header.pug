@@ -1,8 +1,8 @@
-mixin boxHeader(headerLogo, headerName)
+mixin box-header(headerLogo, headerName)
   .box-header
-    .header-logo
-      .circle= headerLogo
-    .header-text 
+    .box-header__logo
+      .box-header__circle= headerLogo
+    .box-header__text
       b= headerName
-    svg.header-line
+    svg.box-header__line
       <line x1="3%" y1="50%" x2="100%" y2="50%" stroke-width="5px" stroke="#3d6cb0">

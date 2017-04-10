@@ -1,9 +1,9 @@
 include ../box-header/box-header.pug
 include skills-mixin.pug
 
-div(class="content box4")
-  +boxHeader('B','SKILLS')
-  .skills
+div(class="content-block content-block__skill")
+  +box-header('B','SKILLS')
+  .skill__content
     +skills-mixin('CREATIVE', 6)
     +skills-mixin('TEAMWORK', 5)
     +skills-mixin('INNOVATE', 3)

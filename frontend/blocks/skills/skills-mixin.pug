@@ -1,13 +1,13 @@
 mixin skills-mixin(name, checked)
     .skill-wrapper
-      span.skill-name= name
+      span.skill__name= name
       br
-      .skill-box
+      .skill__skill-box
         - var i = 0
         while i < 12
           if (i < checked)
-            .skill-checked
+            div(class='skill-circle skill__condition_checked')
             - i++
           else
-            .skill
+            .skill-circle
             - i++
