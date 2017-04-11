@@ -1,18 +1,18 @@
 include ../box-header/box-header.pug
-mixin contact-block()
+mixin contact-block(address, email, phone, website)
   div(class="content-block content-block__contact")
     +box-header('C','CONTACT')
     .contact__content-box
       table.contact__table
         tr
           td.table__first-column_color_blue ADDRESS
-          td Main Street, City
+          td= address
         tr
           td.table__first-column_color_blue E-MAIL
-          td contact@domain.com
+          td= email
         tr
           td.table__first-column_color_blue PHONE
-          td 555-555-555
+          td= phone
         tr
           td.table__first-column_color_blue WEBSITE
-          td www.yourweb.com
+          td= website

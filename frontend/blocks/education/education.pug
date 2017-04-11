@@ -1,37 +1,18 @@
 include ../box-header/box-header.pug
-mixin education-block()
+mixin education-block(quantity, ...items)
+  -var i = 0
   <div class="content-block content-block__education">
     +box-header('D','EDUCATION')
     ul(class='list list_education')
-      li.list__point
-        h2.list__header
-          <span class='list__title_color_blue list__title_weight_bold'>MASTERS DEGREE</span>&nbsp; // Feb 2011 - Jun 2014 <br>UNIVERSITY NAME
+      while (i < quantity)
+        li.list__point
+          h2.list__header
+            each val in items
+              <span class='list__title_color_blue list__title_weight_bold'>
+               - val[0] 
+              </span>&nbsp; // 
+              - val[1] <br>
+               -val[2]
         p.list__paragraph.
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque.
-      li.list__point
-        h2.list__header
-          <span class='list__title_color_blue list__title_weight_bold'>MASTERS DEGREE</span>&nbsp; // Feb 2011 - Jun 2014 <br>UNIVERSITY NAME
-        p.list__paragraph.
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque.
-      li.list__point
-        h2.list__header
-          <span class='list__title_color_blue list__title_weight_bold'>MASTERS DEGREE</span>&nbsp; // Feb 2011 - Jun 2014 <br>UNIVERSITY NAME
-        p.list__paragraph.
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque.
-      li.list__point
-        h2.list__header
-          <span class='list__title_color_blue list__title_weight_bold'>MASTERS DEGREE</span>&nbsp; // Feb 2011 - Jun 2014 <br>UNIVERSITY NAME
-        p.list__paragraph.
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque.
+          item[3]
+        - i++
